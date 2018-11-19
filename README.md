@@ -24,4 +24,3 @@ SendIT is a courier service that helps users deliver parcels to different destin
 
 1. The user can only cancel or change the **destination** of a parcel delivery when the parcel’s **status** is yet to be marked as **delivered**.
 2. Only the user who created the parcel delivery order can cancel the order.
-
