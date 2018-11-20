@@ -1,5 +1,6 @@
 # SendIT
 
+[![Build Status](https://travis-ci.org/leni1/send-it-app.svg?branch=develop)](https://travis-ci.org/leni1/send-it-app/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e993b64734b96cd0f40b/maintainability)](https://codeclimate.com/github/leni1/send-it-app/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e993b64734b96cd0f40b/test_coverage)](https://codeclimate.com/github/leni1/send-it-app/test_coverage)
 
