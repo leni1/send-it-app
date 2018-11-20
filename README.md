@@ -1,5 +1,8 @@
 # SendIT
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/e993b64734b96cd0f40b/maintainability)](https://codeclimate.com/github/leni1/send-it-app/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e993b64734b96cd0f40b/test_coverage)](https://codeclimate.com/github/leni1/send-it-app/test_coverage)
+
 ## Project Overview
 
 SendIT is a courier service that helps users deliver parcels to different destinations.
