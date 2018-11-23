@@ -1,3 +1,6 @@
+from datetime import date
+
+
 class User:
     """User class
 
@@ -18,11 +21,11 @@ class User:
     def __init__(self, user_id, firstname, lastname, othername, email, username, reg_date, is_admin):
         """Initializes the class with its attributes"""
 
-        self.user_id = user_id
-        self.firstname = firstname
-        self.lastname = lastname
-        self.othername = othername
-        self.email = email
-        self.username = username
-        self.reg_date = reg_date
-        self.is_admin = is_admin
+        self.user_id = int(user_id)
+        self.firstname = str(firstname)
+        self.lastname = str(lastname)
+        self.othername = str(othername)
+        self.email = str(email)
+        self.username = str(username)
+        self.reg_date = date(reg_date)
+        self.is_admin = bool(is_admin)
