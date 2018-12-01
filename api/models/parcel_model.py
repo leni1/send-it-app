@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import datetime
 
 
 class Parcel:
@@ -19,14 +19,11 @@ class Parcel:
         orig: Where the parcel is coming from
         dest: Where the parcel is to be delivered to."""
 
-    def __init__(self, par_id, placed_by, weight, weight_metric, delivered_on, status, orig, dest, current_loc):
-        """Initializes the class with its attributes"""
-
-        self.par_id = int(par_id)
-        self.placed_by = int(placed_by)
-        self.weight = float(weight)
-        self.weight_metric = str(weight_metric)
-        self.delivered_on = date(delivered_on)
-        self.status = str(status)
-        self.orig = str(orig)
-        self.dest = str(dest)
+        par_id = attr.ib(validator=attr.validators.instance_of(int))
+        placed_by = attr.ib(validator=attr.validators.instance_of(str))
+        weight = attr.ib(validator=attr.validators.instance_of(float))
+        weight_metric = attr.ib(validator=attr.validators.instance_of(str))
+        delivered_on = attr.ib(validator=attr.validators.instance_of(datetime))
+        status = attr.ib(validator=attr.validators.instance_of(str))
+        origin = attr.ib(validator=attr.validators.instance_of(str))
+        dest = attr.ib(validator=attr.validators.instance_of(str))

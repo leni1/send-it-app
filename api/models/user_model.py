@@ -1,6 +1,8 @@
-from datetime import date
+import attr
 
+from datetime import datetime
 
+@attr.s(auto_attribs=True, slots=True)
 class User:
     """User class
 
@@ -18,14 +20,12 @@ class User:
         reg_date: The user's date of registration.
         is_admin: Tells us whether a user is an admin or not."""
 
-    def __init__(self, user_id, firstname, lastname, othername, email, username, reg_date, is_admin):
-        """Initializes the class with its attributes"""
+        user_id = attr.ib(validator=attr.validators.instance_of(int))
+        firstname = attr.ib(validator=attr.validators.instance_of(str))
+        lastname = attr.ib(validator=attr.validators.instance_of(str))
+        othername = attr.ib(validator=attr.validators.instance_of(str))
+        email = attr.ib(validator=attr.validators.instance_of(str))
+        username = attr.ib(validator=attr.validators.instance_of(str))
+        reg_date = attr.ib(validator=attr.validators.instance_of(datetime))
+        is_admin = attr.ib(validator=attr.validators.instance_of(bool))
 
-        self.user_id = int(user_id)
-        self.firstname = str(firstname)
-        self.lastname = str(lastname)
-        self.othername = str(othername)
-        self.email = str(email)
-        self.username = str(username)
-        self.reg_date = date(reg_date)
-        self.is_admin = bool(is_admin)
